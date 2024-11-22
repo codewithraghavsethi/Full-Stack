@@ -13,7 +13,7 @@ const Login = () => {
           <input type="email" placeholder='Email' />
           <input type="password" placeholder='Password' />
           <button>Sign Up</button>
-          <div className="for-help">
+          <div className="form-help">
             <div className="remember">
               <input type="checkbox"/>
               <label htmlFor="">Remember Me</label>
