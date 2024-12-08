@@ -42,4 +42,8 @@ module.exports.loginUser = async (res, req, next) => {
   if (!isMatch) {
     return res.status(401).json({ message: "Invalid email and password" });
   }
+
+  const token = user.generateAuthToken();
+
+  res.status(200).json({ token, user });
 };
