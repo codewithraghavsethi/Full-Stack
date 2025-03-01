@@ -2,7 +2,9 @@ import React from 'react'
 
 const CourseCard = () => {
   return (
-    <div>CourseCard</div>
+    <div>
+      
+    </div>
   )
 }
 
