@@ -8,9 +8,9 @@ const TestimonialsSection = () => {
       <p className='md:text-base text-gray-500 mt-3'>Hear from our learners as they share their journeys of transformation, success, and how our <br /> platform has made a difference in their lives.</p>
       <div>
         {dummyTestimonial.map((testimonial, index)=>(
-          <div key={index}>
-            <div>
-              <img src={testimonial.image} alt={testimonial.name} />
+          <div key={index} className='text-sm text-left border border-gray-500/30 pb-6 rounded-lg bg-white'>
+            <div className='flex item-center gap-4 px-5 py-4 bg-gray-500/10'>
+              <img className='h-12 w-12 rounded-full' src={testimonial.image} alt={testimonial.name} />
               <div>
                 <h1>{testimonial.name}</h1>
                 <p>{testimonial.role}</p>
