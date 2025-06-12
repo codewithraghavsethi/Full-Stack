@@ -5,7 +5,7 @@ import { useAppContext } from '../context/AppContext.jsx'
 
 const Navbar = () => {
 const [open, setOpen] = React.useState(false)
-const [user, setUser, setShowUserLogin, navigate] = useAppContext();
+const {user, setUser, setShowUserLogin, navigate} = useAppContext();
 
 const logout = async ()=>{
     setUser(null);
