@@ -1,12 +1,14 @@
-import React from 'react'
-import MainBanner from '../components/MainBanner'
+import React from "react";
+import MainBanner from "../components/MainBanner";
+import Categories from "../components/Categories";
 
 const Home = () => {
   return (
-    <div className='mt-10'>
-        <MainBanner />
+    <div className="mt-10">
+      <MainBanner />
+      <Categories />
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
