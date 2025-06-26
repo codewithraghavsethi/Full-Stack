@@ -10,9 +10,7 @@ const App = () => {
   return (
     <div>
       { isSellerPath ? null : <Navbar /> } 
-
       <Toaster />
-
       <div
         className={`${isSellerPath ? "" : "px-6 md:px-16 lg:px-24 xl:px-32"} `}
       >
