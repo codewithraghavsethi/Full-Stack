@@ -8,7 +8,7 @@ const AllProducts = () => {
 
   return (
     <div className='mt-16 flex flex-col'>
-        <div>
+        <div className='flex flex-col items-end w-max'>
           <p>ALL PRODUCTS</p>
           <div className='w-16 h-0.5 bg-primary rounded-full'></div>
         </div>
