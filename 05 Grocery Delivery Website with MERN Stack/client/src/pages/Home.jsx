@@ -14,7 +14,6 @@ const Home = () => {
       <BestSeller />
       <BottamBanner />
       <NewsLetter />
- 
     </div>
   );
 };
