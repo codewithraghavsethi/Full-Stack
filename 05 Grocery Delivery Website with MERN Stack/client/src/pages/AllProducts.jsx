@@ -1,5 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
+import { useEffect, useState } from 'react'
 import { useAppContext } from '../context/AppContext'
+import ProductCard from '../components/ProductCard'
 
 const AllProducts = () => {
 
@@ -22,14 +24,15 @@ const AllProducts = () => {
           <div className='w-16 h-0.5 bg-primary rounded-full'></div>
         </div>
 
-        <div>
-          {filteredProducts.filter((product)=>product.inStock).map((products, index)=>(
-            <ProductCard key={index} products={products} />
+        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 md:gap-6 lg:grid-cols-5 mt-6'>
+          {filteredProducts.filter((product)=>product.inStock).map((product, index)=>(
+            <ProductCard key={index} product={product} />
           ))}
         </div>
-
+        
     </div>
   )
 }
 
 export default AllProducts
+

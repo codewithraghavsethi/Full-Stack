@@ -13,7 +13,6 @@ export const AppContextProvider = ({ children }) => {
   const [isSeller, setIsSeller] = useState(false);
   const [showUserLogin, setShowUserLogin] = useState(false);
   const [products, setProducts] = useState([]);
-
   const [cartItems, setCartItems] = useState({});
   const [searchQuery, setSearchQuery] = useState({});
 
@@ -84,3 +83,6 @@ export const AppContextProvider = ({ children }) => {
 export const useAppContext = () => {
   return useContext(AppContext);
 };
+
+
+
